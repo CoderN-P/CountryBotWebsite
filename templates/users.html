@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta>
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="https://www.bergerpaints.com/imaginecolours/wp-content/uploads/2016/09/flags-of-the-world-1170x693.png"/>
+
+    <meta property="description" content="The official Country Bot website!!">
+
+    <meta name="author" content="Coder N">
+
+    <title>Country Bot</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+
+    .topnav {
+  background-color: #05386B;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #EDF5E1;
+  text-align: center;
+  font-family: 'Oswald';
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav p {
+  float: left;
+  color: #EDF5E1;
+  text-align: center;
+  font-family: 'Oswald';
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transition-duration: 0.4s;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  
+  color: white;
+}
+
+@font-face
+
+
+    h1 { font-family: font-family: 'PT Sans Caption', sans-serif;; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: #05386B;} h3 { font-family: 'PT Sans Caption', sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; color: #C8C8C8;} p { font-family: 'PT Sans Caption', sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; color: #EDF5E1;} blockquote { font-family: 'PT Sans Caption', sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: 'PT Sans Caption', sans-serif; font-variant: normal; font-weight: 400; line-height: 18.5714px; color: #05386B;}
+
+    .img-size img {
+    width: 117px;
+    height: 69.3px;
+}
+
+    h31 {
+      float: right;
+    }
+    p11 {
+      float: left;
+      text-align: center;
+    }
+    img {
+      float: left;
+      border-radius: 10px;
+    }
+  #wrapper {
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .button1 {
+  background: url("https://i.imgur.com/nX0C2Ux.png"); 
+  color: black; 
+  border: 2px solid #FFFFFF;
+  width: 900px; 
+  height: 69.3px;
+  transition-duration: 0.5s;
+  border-radius: 10px
+}
+
+.button1:hover {
+  background-color: #FFFFFF;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white; 
+}
+
+.img1 {
+  float: right;
+  border-radius: 50%;
+}
+
+  </style>
+  <body style="background-color: black;">
+    
+
+
+
+    
+    
+
+    <style>
+#center {
+  
+  text-align: center;
+  background-color: #5CDB95;
+  width: 900px;
+  padding: 0px;
+  border: 0px;
+  margin: 10px;
+}
+
+
+
+#div1 {
+  float: none
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 200;
+    padding: 10px;
+    
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#blackdiv {
+  border: 5px;
+  margin: 5px;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+
+ 
+
+  <div style="margin-left: 250px; margin-right: 200px; text-align: center;">
+ <div id="wrapper"><div id="blackdiv"style="padding-bottom: 20;"><img src={{data[1]}} width=100, height=100 style="border-radius: 50%; float: left;"></div>
+
+ <div id="blackdiv"style="padding-bottom: 20;"><h1 style="color: #326496; font-family: 'PT Sans Caption', sans-serif;">{{data[2][0]}}</h1></div></div>
+
+
+
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>POPULATION</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][1]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>MULTIPLIER</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][2]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>JOB</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][3]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>WORK ETHIC</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][4]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>PRESTIGE LEVEL</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][5]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>PRESTIGE REQUIREMENT</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][6]}}</h3></div>
+  </div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>WARS PLAYED</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][7]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>WARS WON</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][8]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>WARS LOST</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][9]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>WORK COMMANDS ISSUED</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][10]}}</h3></div></div>
+
+  <div id="blackdiv" style="float:left;"><div id="blackdiv"><h3>COINS</h3></div>
+  <div id="blackdiv" style="padding: 1px; margin: 1px;border: 1px;"><h3>{{data[2][11]}}</h3></div></div>
+
+
+    
+
+
+    
+
+  
+
+    
+    
+    
+    
+
+      
+ 
+
+    
+    
+    
+
+
+
+    
+  
+
+
+ 
+    </div>
+
+  </body>
+</html>
