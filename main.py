@@ -30,8 +30,8 @@ def page_not_found(e):
 
 def exchange_code(code):
       data = {
-        'client_id': 829032196852940820 ,
-        'client_secret': "L9BoTFMp0xOOqNkanjDco6LsWq1UKBFi",
+        'client_id': os.environ['CLIENTID'] ,
+        'client_secret': os.environ['CLIENTSECRET'],
         'grant_type': 'authorization_code',
         'code': code,
         'redirect_uri': "https://cbotdiscord.npcool.repl.co"
