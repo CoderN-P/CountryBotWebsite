@@ -1,0 +1,80 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+button {
+  background:#fcba03; 
+  color: black; 
+  border: 2px solid #FFFFFF;
+  width: 900px; 
+  margin:10px;
+  height: 69.3px;
+  transition-duration: 0.5s;
+  border-radius: 10px
+}
+
+button:hover {
+  background-color: rgba(252, 186, 3,0.5);
+  
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  h1 { 
+    font-family: 'Lato', sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white;}
+ h3 { 
+   font-family: 'Lato', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; color: white;} 
+ p { 
+   font-family: 'Lato', sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; color: #EDF5E1;} 
+ blockquote { 
+   font-family: 'Lato', sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+ pre { 
+   font-family: 'Lato', sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; color: white;}
+body{
+  font-family: 'Lato', sans-serif;; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('https://media.discordapp.net/attachments/827298441025290240/861639945114615818/unknown.png?width=1546&height=966');
+  background-size: auto 140%;
+  background-repeat: no-repeat;
+  background-position: left top;background-attachment: fixed;
+  }
+  .topnav {
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #EDF5E1;
+  text-align: center;
+  font-family: ''Lato', sans-serif;';
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav p {
+  float: left;
+  color: #EDF5E1;
+  text-align: center;
+  font-family: ''Lato', sans-serif;';
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transition-duration: 0.4s;
+  color: yellow;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  
+  color: white;
+}
+}
+</style>
+<div class="topnav">
+<a href = "https://cbotdiscord.npcool.repl.co/login">Login</a>
+<a href = "https://cbotdiscord.npcool.repl.co/botdata">Bot Data</a>
+</div>
+{% block main %}{% endblock %}

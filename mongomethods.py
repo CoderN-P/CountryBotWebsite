@@ -9,5 +9,14 @@ my_collection = db1.collection_name
 
 
 
+
 def reading(user_id):
    return my_collection.find_one({"_id": str(user_id)})['data'].values()
+
+
+mydb = client1["premium"]
+
+mycol = mydb["web"]
+mycol2 = mydb["disc"]
+
+  

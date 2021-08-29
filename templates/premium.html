@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block main %} 
+<title>Reedeem Country Bot Premium</title>
+<meta name="theme-color" content="#36393E">
+<style>
+  .box{
+    color:white;
+    background:#18191C;
+    margin-top:50px;
+    width:25%;
+    height:570px;
+    border-radius:5px;
+  }
+  .myimage{
+    border-radius:50%;
+    width:50px;
+  }
+.icon-1Vf2Hegreen{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background:#3AA55D;
+    border-radius:50%;
+}
+.icon-1Vf2Hered{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background:grey;
+    border-radius:50%;
+}
+input[type=submit]{
+  background:#7288DA;
+  padding:7px;
+  color:white;
+  border-radius:3px;
+  border-style:none;
+}
+input[type=submit]:hover{
+  background:#556ab5;
+}
+.grey{
+  background:#2E3136;
+}
+.sectionLabel-1pA-5F {
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b9bbbe;
+    font-size:0.7em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
+<h1 style='font-size:3em;'>Country Bot</h1>
+<center>
+<div class='box'>
+<h1 style='font-size:7em;'>✅</h1>
+<h2>Thanks! Press the following button to activate it!</h2>
+<h2>Once you activate, you will be redirected to the Support Server, you must use the command <code>.premium [code]</code> to activate!</h2>
+<h2>Your code is:</h2>
+<h1 style='font-size:4em;'>{{code}}</h1>
+<form method='POST' action = '/activate'>
+<div class='grey'>
+<br>
+<br>
+<input type='hidden' value={{code}} name='code'>
+<input type='hidden' name='username' value={{username}}>
+<input type='submit' value='Activate Premium'>
+<br>
+<br>
+</div>
+</form>
+</div>
+</center>
+{% endblock %}

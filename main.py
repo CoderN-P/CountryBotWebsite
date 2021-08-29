@@ -5,13 +5,28 @@ import os, json
 import flask_discord
 from mongomethods import reading
 from flask_discord import DiscordOAuth2Session, requires_authorization, Unauthorized
-
+import random
 app = Flask(__name__)
 
 
-
-
-
+@app.route('/activate',methods=['POST'])
+def activate():
+  code = request.form['code']
+  with open('static/main.json','r') as f:
+    f = json.load(f)
+  username = request.form['username']
+  f[username] = code
+  with open('static/main.json','w') as out:
+    json.dump(f,out,indent=4)
+  return redirect('https://discord.com/channels/821872779523522580/821872779523522583')
+@app.route('/testing/<s>')
+def s(s):
+  return render_template(s)
+@app.route('/TP',methods=['POST'])
+def TP_partnership():
+  username = request.form['username']
+  code = random.randrange(100000,999999)
+  return render_template('premium.html',code=code,username=username)
 @app.route("/login/")
 def login():
     return redirect('https://discord.com/api/oauth2/authorize?client_id=810662403217948672&redirect_uri=https%3A%2F%2Fcbotdiscord.npcool.repl.co&response_type=code&scope=identify')
@@ -97,10 +112,13 @@ def main_page():
 
 
 
-@app.route('/<id>/<avatar>/')
-def user(id, avatar):
+@app.route('/<id>/<avatar>/<name>/<discrim>')
+def user(id, avatar, name, discrim):
   try:
-    return render_template('users.html', data=[id,  f"https://cdn.discordapp.com/avatars/{id}/{avatar}.png", list(reading(id))])
+    name = name + "#" + discrim
+    name = name.replace('%20', ' ')
+    
+    return render_template('users.html', data=[id,  f"https://cdn.discordapp.com/avatars/{id}/{avatar}.png", list(reading(id)), name])
   except:
     return render_template('404.html')
 
